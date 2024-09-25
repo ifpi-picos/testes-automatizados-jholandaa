@@ -50,8 +50,7 @@ export default class ContaBancaria {
             console.log('Extrato da conta:');
             this.extrato.forEach((operacao) => console.log(operacao));
         }
-    }
-    private registrarOperacao(descricao: string): void {
+    }    private registrarOperacao(descricao: string): void {
         const data = new Date().toLocaleString();
         this.extrato.push(`${data}: ${descricao}`);
     }
